@@ -9,9 +9,9 @@ namespace DomainService
         private readonly double _gst = 1.18;
         private readonly double _rollBackGst = 1/1.18;
 
-        public ProductService(IProductRepository repository)
+        public ProductService(IProductRepository productRepository)
         {
-            _repository = repository;
+            _repository = productRepository;
         }
 
         public Tuple<string, double> GetProductInfo()

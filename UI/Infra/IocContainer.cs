@@ -2,6 +2,7 @@
 using SimpleInjector;
 using DomainService;
 using SqlDataAccess;
+using ClassLibrary1;
 
 namespace DI.Infra
 {
@@ -21,7 +22,7 @@ namespace DI.Infra
             _container.RegisterSingleton<MainWindowViewModel>();
             _container.RegisterSingleton<ProductController>();
             _container.RegisterSingleton<IProductService, ProductService>();
-            _container.RegisterSingleton<IProductRepository, SqlProductRepository>();
+            _container.RegisterSingleton<IProductRepository, FileProductRepository>();
             _container.Verify();
         }
 

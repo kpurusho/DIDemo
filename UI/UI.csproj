@@ -101,6 +101,10 @@
       <Project>{532e5ae5-d111-4422-aee3-681414fc496e}</Project>
       <Name>DomainService</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary1\FileDataAccess.csproj">
+      <Project>{09af6df2-4227-419e-948b-66d309d8bfc3}</Project>
+      <Name>FileDataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DataAccess.Interface\DataAccess.Interface.csproj">
       <Project>{63062db7-068a-4e63-9743-d2ba4adcebc0}</Project>
       <Name>DataAccess.Interface</Name>
